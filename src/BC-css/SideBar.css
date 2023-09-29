@@ -1,0 +1,100 @@
+/* Sidebar.css */
+
+.sidebar {
+  width: 250px;
+  background-color: #dddddd;
+  color: #000000;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column; /* Align items vertically from top to bottom */
+  justify-content: flex-start; /* Align items to the top of the container */
+  transition: width 0.3s ease-in-out;
+  left: 0;
+  top: 0px;
+}
+
+.sidebar.expanded {
+  width: 70px;
+}
+
+.toggle-button {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  align-items: center; /* Center vertically within the button */
+}
+
+.sidebar.expanded .toggle-button {
+  transform: scaleX(-1);
+}
+
+.toggle-button i {
+  font-size: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; /* Allow the menu to take up remaining vertical space */
+  overflow-y: auto; /* Add a scrollbar if the menu content exceeds the container height */
+}
+
+.menu-item {
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  align-items: center; /* Center items vertically within menu items */
+}
+
+.menu-item:hover {
+  background-color: #555;
+}
+
+.menu i {
+  margin-right: 10px;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-item.open i {
+  transform: rotate(180deg);
+}
+
+.sub-menu {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.menu-item.open .sub-menu {
+  max-height: 1000px; /* Adjust the maximum height as needed */
+}
+
+.sub-menu-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sub-menu-item:hover {
+  background-color: #555;
+}
+
+.sub-menu-icon {
+  margin-left: auto;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sub-menu.open .sub-menu-icon {
+  transform: rotate(180deg);
+}
