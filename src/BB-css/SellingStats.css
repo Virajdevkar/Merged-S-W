@@ -1,6 +1,6 @@
 /* SellingStats.css */
 .selling-stats-page {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -36,7 +36,7 @@
   }
   
   .top-selling-table th {
-    background-color: #f0f0f0;
+    background-color: #55939f;
   }
   
   /* Add more styling as needed */
