@@ -1,0 +1,160 @@
+/* AdminCtrl.css */
+
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .back-button {
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #007bff;
+    margin-left: 0px;
+  }
+  
+  .admin-section, .employee-section {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .admin-section h2, .employee-section h2,.dashboard h2 {
+    color: #007bff;
+  }
+  
+  .employee-info {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .employee-info img {
+    max-width: 30%;
+    max-height: 20%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .employee-info p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .employee-info button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .employee-info button:hover {
+    background-color: #0056b3;
+  }
+  
+  input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .admin-section, .employee-section {
+      padding: 15px;
+    }
+  
+    .employee-info button {
+      margin-bottom: 10px;
+    }
+  }
+  /* Add your existing CSS styles above */
+
+/* New styles for Employee Management */
+.employee-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .employee-card {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .employee-card img {
+    width: 60%;
+    height: 40%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .employee-details {
+    margin-top: 10px;
+  }
+  
+  .employee-details h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .employee-details p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .employee-details span {
+    font-weight: bold;
+  }
+  
+  .edit-button,
+  .remove-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .edit-button:hover,
+  .remove-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-employee-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .add-employee-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Add your existing media queries and other styles below */
+  
